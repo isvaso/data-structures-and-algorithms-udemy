@@ -4,7 +4,7 @@ package com.isvaso.sortalgorithms.bubblesort;
  * Bubble Sort<br>
  * <ol>
  *     <li>In-place algorithm</li>
- *     <li>O(n2) time complexity – quadratic</li>
+ *     <li>O(n^2) time complexity – quadratic</li>
  *     <li>It will take 100 steps to sort 10 items, 10.000 steps
  *     to sort 100 items, 1.000.000 steps to sort 1000 items</li>
  *     <li>Algorithm degrades quickly</li>

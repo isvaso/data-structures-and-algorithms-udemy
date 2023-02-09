@@ -1,4 +1,4 @@
-package com.isvaso.sortalgorithms.insertionsort;
+package com.isvaso.sortalgorithms.shellsort;
 
 import com.isvaso.sortalgorithms.arraygenerator.ArrayGenerator;
 import org.junit.jupiter.api.Test;
@@ -7,14 +7,14 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-class InsertionSortTest {
+class ShellSortTest {
 
     @Test
     void sort() {
         int[] intSourceArray = ArrayGenerator.getUnsortedIntArray();
         int[] intAssertArray = ArrayGenerator.getSortedIntArray();
 
-        InsertionSort.sort(intSourceArray);
+        ShellSort.sort(intSourceArray);
 
         Arrays.stream(intSourceArray)
                 .forEach(System.out::println);
