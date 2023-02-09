@@ -1,4 +1,4 @@
-package com.isvaso.sortalgorithms;
+package com.isvaso.sortalgorithms.bubblesort;
 
 /**
  * Bubble Sort<br>
@@ -8,16 +8,14 @@ package com.isvaso.sortalgorithms;
  *     <li>It will take 100 steps to sort 10 items, 10.000 steps
  *     to sort 100 items, 1.000.000 steps to sort 1000 items</li>
  *     <li>Algorithm degrades quickly</li>
+ *     <li>Stable sort</li>
  * </ol>
  * "Data Structures and Algorithms: Deep Dive Using Java" course on Udemy.
  */
-
 public class BubbleSort {
-
     /**
      * Bubble Sort implementation method
-     * @param array source array with integer elements
-     * @return sorted int[] array
+     * @param array source integer array
      */
     public static void sort(int[] array) {
         for (int lastUnsortedIndex = array.length - 1; lastUnsortedIndex > 0;
@@ -29,14 +27,13 @@ public class BubbleSort {
             }
         }
     }
-
     /**
      * Method for swapping two elements in an array
-     * @param array source array with integer elements
-     * @param i first element
-     * @param j second element
+     * @param array source integer array
+     * @param i index of first element
+     * @param j index of second element
      */
-    public static void swap(int[] array, int i, int j) {
+    private static void swap(int[] array, int i, int j) {
         if (i == j)
             return;
 
