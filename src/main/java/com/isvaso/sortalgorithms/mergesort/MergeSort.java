@@ -1,12 +1,17 @@
 package com.isvaso.sortalgorithms.mergesort;
 /**
  * Merge Sort<br>
- * <ol>
+ * <ul>
+ *     <li>Divide and conquer algorithm</li>
+ *     <li>Recursive algorithm</li>
+ *     <li>Two phases: Splitting and Merging</li>
+ *     <li>Splitting phase leads to faster sorting during the Merging phase</li>
+ *     <li>Splitting is logical We don't create new arrays</li>
  *     <li>NOT an in-place algorithm</li>
  *     <li>O(n log n) - base 2. We're repeatedly dividing the array
  *     in half during the splitting phase</li>
  *     <li>Stable sort</li>
- * </ol>
+ * </ul>
  * "Data Structures and Algorithms: Deep Dive Using Java" course on Udemy.
  */
 public class MergeSort {
