@@ -13,7 +13,7 @@ package com.isvaso.sortalgorithms.insertionsort;
 public class InsertionSort {
     /**
      * Insertion Sort implementation method
-     * @param array - source integer array
+     * @param array - source {@code int} array
      */
     public static void sort(int[] array) {
         for (int firstUnsortedIndex = 1; firstUnsortedIndex < array.length;

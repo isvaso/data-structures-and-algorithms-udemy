@@ -33,7 +33,7 @@ public class QuickSort {
     }
     /**
      * Pivot position search method
-     * @param input - source array
+     * @param input - source {@code int} array
      * @param start - start position in the array
      * @param end - middle position in the array increased by 1
      *            (like array size)

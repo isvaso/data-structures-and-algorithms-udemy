@@ -16,9 +16,14 @@ package com.isvaso.sortalgorithms.countingsort;
  * "Data Structures and Algorithms: Deep Dive Using Java" course on Udemy.
  */
 public class CountingSort {
-
+    /**
+     * Counting Sort implementation method
+     * @param input - source {@code int} array
+     * @param min - minimum number in array
+     * @param max - maximum number in array
+     */
     public static void sort(int[] input, int min, int max) {
-        int[] countArray = new int[(max) - (min) + 1];
+        int[] countArray = new int[max - min + 1];
 
         for (int i = 0; i < input.length; i++) {
             countArray[input[i] - min]++;

@@ -14,7 +14,7 @@ package com.isvaso.sortalgorithms.bubblesort;
 public class BubbleSort {
     /**
      * Bubble Sort implementation method
-     * @param array - source integer array
+     * @param array - source {@code int} array
      */
     public static void sort(int[] array) {
         for (int lastUnsortedIndex = array.length - 1; lastUnsortedIndex > 0;
