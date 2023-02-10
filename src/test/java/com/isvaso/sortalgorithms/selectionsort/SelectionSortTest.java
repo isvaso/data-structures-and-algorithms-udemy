@@ -4,6 +4,8 @@ import com.isvaso.sortalgorithms.arraygenerator.ArrayGenerator;
 import com.isvaso.sortalgorithms.bubblesort.BubbleSort;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class SelectionSortTest {
@@ -11,7 +13,9 @@ class SelectionSortTest {
     @Test
     void sort() {
         int[] intSourceArray = ArrayGenerator.getUnsortedIntArray();
-        int[] intAssertArray = ArrayGenerator.getSortedIntArray();
+        int[] intAssertArray = Arrays.copyOf(intSourceArray,
+                intSourceArray.length);
+        Arrays.sort(intAssertArray);
 
         BubbleSort.sort(intSourceArray);
 

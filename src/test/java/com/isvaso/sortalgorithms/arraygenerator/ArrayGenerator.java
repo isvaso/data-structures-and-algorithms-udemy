@@ -1,35 +1,31 @@
 package com.isvaso.sortalgorithms.arraygenerator;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class ArrayGenerator {
 
-    private static final int[] unsortedIntArray = generateIntArray(10);
+    private static final int[] unsortedIntArray =
+            generateIntArray(10, false);
+    private static final int[] unsortedPositiveIntArray =
+            generateIntArray(10, true);
 
-    private static int[] generateIntArray(int length) {
+    private static int[] generateIntArray(int length, boolean positiveFlag) {
         Random random = new Random();
         int[] resultArray = new int[length];
 
         for (int i = 0; i < resultArray.length; i++)
-            resultArray[i] = random.nextInt(-10, 10);
-
-        return resultArray;
+            if (!positiveFlag)
+                resultArray[i] = random.nextInt(-10, 10);
+            else
+                resultArray[i] = random.nextInt(0, 10);
+            return resultArray;
     }
 
     public static int[] getUnsortedIntArray() {
         return unsortedIntArray;
     }
 
-    public static int[] getSortedIntArray() {
-        int[] resultArray = new int[unsortedIntArray.length];
-
-        for (int i = 0; i < resultArray.length; i++) {
-            resultArray[i] = unsortedIntArray[i];
-        }
-
-        Arrays.sort(resultArray);
-
-        return resultArray;
+    public static int[] getUnsortedPositiveIntArray() {
+        return unsortedPositiveIntArray;
     }
 }
