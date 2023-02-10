@@ -16,7 +16,7 @@ package com.isvaso.sortalgorithms.shellsort;
 public class ShellSort {
     /**
      * Shell Sort implementation method
-     * @param array source integer array
+     * @param array - source integer array
      */
     public static void sort(int[] array) {
         for (int gap = array.length / 2; gap > 0; gap /= 2) {

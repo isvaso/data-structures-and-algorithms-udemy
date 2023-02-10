@@ -3,8 +3,6 @@ package com.isvaso.sortalgorithms.bubblesort;
 import com.isvaso.sortalgorithms.arraygenerator.ArrayGenerator;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class BubbleSortTest {
@@ -15,9 +13,6 @@ class BubbleSortTest {
         int[] intAssertArray = ArrayGenerator.getSortedIntArray();
 
         BubbleSort.sort(intSourceArray);
-
-        Arrays.stream(intSourceArray)
-                .forEach(System.out::println);
 
         assertArrayEquals(intAssertArray, intSourceArray);
     }

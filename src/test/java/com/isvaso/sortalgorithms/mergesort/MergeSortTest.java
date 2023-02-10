@@ -1,19 +1,18 @@
-package com.isvaso.sortalgorithms.insertionsort;
+package com.isvaso.sortalgorithms.mergesort;
 
 import com.isvaso.sortalgorithms.arraygenerator.ArrayGenerator;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-
-class InsertionSortTest {
+class MergeSortTest {
 
     @Test
     void sort() {
         int[] intSourceArray = ArrayGenerator.getUnsortedIntArray();
         int[] intAssertArray = ArrayGenerator.getSortedIntArray();
 
-        InsertionSort.sort(intSourceArray);
+        MergeSort.sort(intSourceArray, 0, intSourceArray.length);
 
-        assertArrayEquals(intAssertArray, intSourceArray);
+        Assertions.assertArrayEquals(intAssertArray, intSourceArray);
     }
 }

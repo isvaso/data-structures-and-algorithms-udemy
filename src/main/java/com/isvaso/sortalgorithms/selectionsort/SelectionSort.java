@@ -1,5 +1,4 @@
 package com.isvaso.sortalgorithms.selectionsort;
-
 /**
  * Selection Sort<br>
  * <ol>
@@ -16,7 +15,7 @@ public class SelectionSort {
     /**
      /**
      * Selection Sort implementation method
-     * @param array source integer array
+     * @param array - source integer array
      */
     public static void sort(int[] array) {
         for (int lastUnsortedIndex = array.length - 1; lastUnsortedIndex > 0;
