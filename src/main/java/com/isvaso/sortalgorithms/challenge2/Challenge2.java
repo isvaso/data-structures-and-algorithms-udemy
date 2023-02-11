@@ -7,7 +7,6 @@ package com.isvaso.sortalgorithms.challenge2;
 public class Challenge2 {
     /**
      * Recursion Insertion Sort implementation method
-     *
      * @param array source {@code int} array
      */
     public static void sort(int[] array, int numItems) {
