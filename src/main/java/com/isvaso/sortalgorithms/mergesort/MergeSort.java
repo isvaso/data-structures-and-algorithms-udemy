@@ -18,10 +18,9 @@ public class MergeSort {
     /**
      * Merge Sort implementation method
      *
-     * @param input - source {@code int} array
-     * @param start - start position in the array
-     * @param end   - middle position in the array increased by 1
-     *              (like array size)
+     * @param input source {@code int} array
+     * @param start start position in the array
+     * @param end middle position in the array increased by 1 (like array size)
      */
     public static void sort(int[] input, int start, int end) {
         if (end - start < 2)
@@ -38,11 +37,10 @@ public class MergeSort {
     /**
      * Method of merge two array ranges into one sorted one.
      *
-     * @param input - source array
-     * @param start - start position in the array
-     * @param mid   - middle position in the array
-     * @param end   - middle position in the array increased by 1
-     *              (like array size)
+     * @param input source array
+     * @param start start position in the array
+     * @param mid middle position in the array
+     * @param end middle position in the array increased by 1 (like array size)
      */
     private static void merge(int[] input, int start, int mid, int end) {
         if (input[mid - 1] <= input[mid])

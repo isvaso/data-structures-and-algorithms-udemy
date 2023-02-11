@@ -1,7 +1,6 @@
 package com.isvaso.sortalgorithms.shellsort;
 /**
  * Shell Sort<br>
- *
  * <ul>
  *     <li>Variation of insertion Sort</li>
  *     <li>Insertion sort choose which element to insert using a gap of 1</li>
@@ -21,7 +20,7 @@ package com.isvaso.sortalgorithms.shellsort;
 public class ShellSort {
     /**
      * Shell Sort implementation method
-     * @param array - source integer array
+     * @param array source integer array
      */
     public static void sort(int[] array) {
         for (int gap = array.length / 2; gap > 0; gap /= 2) {

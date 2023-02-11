@@ -22,50 +22,52 @@ package com.isvaso.sortalgorithms.radixsort;
 public class RadixSort {
     /**
      * Radix Sort implementation method
-     * @param input - source {@code int} array
-     * @param radix - radix (for {@code int} is 10)
-     * @param width - width of numbers in source array (1462 = 4)
+     * @param input source {@code int} array
+     * @param radix radix (for {@code int} is 10)
+     * @param width width of numbers in source array (1462 = 4)
      */
     public static void sort(int[] input, int radix, int width) {
-        for (int i = 0; i < width; i++) {
+        for (int i = 0; i < width; i++)
             radixSingleSort(input, i, radix);
-        }
     }
     /**
      * Single digit sorting method
-     * @param input - source {@code int} array
-     * @param position - position of a digit in a number
-     * @param radix - radix (for {@code int} is 10)
+     * @param input source {@code int} array
+     * @param position position of a digit in a number
+     * @param radix radix (for {@code int} is 10)
      */
     private static void radixSingleSort(int[] input, int position, int radix) {
         int numItems = input.length;
         int[] countArray = new int[radix];
 
-        // Adjust the count array
         for (int value : input) {
             countArray[getDigit(position, value, radix)]++;
         }
 
-        for (int j = 1; j < radix; j++) {
+        // Adjust the count array
+        // Make a shift, which allows us to understand the number of elements
+        for (int j = 1; j < radix; j++)
             countArray[j] += countArray[j - 1];
-        }
+
+        // 1010000100 -> 112222233
+        // there are 3 elements, so we will know
+        // the new positions in the array temp[]
+        // --3 = 2, --1 = 0 etc.
 
         int[] temp = new int[numItems];
 
-        for (int tempIndex = numItems - 1; tempIndex >= 0; tempIndex--) {
+        for (int tempIndex = numItems - 1; tempIndex >= 0; tempIndex--)
             temp[--countArray[getDigit(position, input[tempIndex], radix)]] =
                     input[tempIndex];
-        }
 
-        for (int tempIndex = 0; tempIndex < numItems; tempIndex++) {
+        for (int tempIndex = 0; tempIndex < numItems; tempIndex++)
             input[tempIndex] = temp[tempIndex];
-        }
     }
     /**
      * Method for getting a digit from a number by position
-     * @param position - position of a digit in a number
-     * @param value - value from array
-     * @param radix - radix (for {@code int} is 10)
+     * @param position position of a digit in a number
+     * @param value value from array
+     * @param radix radix (for {@code int} is 10)
      * @return {@code int} digit from a number by position
      */
     private static int getDigit(int position, int value, int radix) {

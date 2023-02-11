@@ -18,9 +18,9 @@ package com.isvaso.sortalgorithms.quicksort;
 public class QuickSort {
     /**
      * Merge Sort implementation method
-     * @param input - source array
-     * @param start - start position in the array
-     * @param end   - middle position in the array increased by 1
+     * @param input source array
+     * @param start start position in the array
+     * @param end middle position in the array increased by 1
      *              (like array size)
      */
     public static void sort(int[] input, int start, int end) {
@@ -33,10 +33,9 @@ public class QuickSort {
     }
     /**
      * Pivot position search method
-     * @param input - source {@code int} array
-     * @param start - start position in the array
-     * @param end - middle position in the array increased by 1
-     *            (like array size)
+     * @param input source {@code int} array
+     * @param start start position in the array
+     * @param end middle position in the array increased by 1 (like array size)
      * @return {@code int} - new pivot index
      */
     private static int partition(int[] input, int start, int end) {
@@ -59,4 +58,5 @@ public class QuickSort {
 
         return j;
     }
+
 }

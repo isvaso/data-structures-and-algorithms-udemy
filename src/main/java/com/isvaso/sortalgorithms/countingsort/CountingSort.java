@@ -18,9 +18,9 @@ package com.isvaso.sortalgorithms.countingsort;
 public class CountingSort {
     /**
      * Counting Sort implementation method
-     * @param input - source {@code int} array
-     * @param min - minimum number in array
-     * @param max - maximum number in array
+     * @param input source {@code int} array
+     * @param min minimum number in array
+     * @param max maximum number in array
      */
     public static void sort(int[] input, int min, int max) {
         int[] countArray = new int[max - min + 1];

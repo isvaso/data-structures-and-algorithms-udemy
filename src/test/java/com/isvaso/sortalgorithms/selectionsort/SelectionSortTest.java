@@ -1,7 +1,6 @@
 package com.isvaso.sortalgorithms.selectionsort;
 
 import com.isvaso.sortalgorithms.arraygenerator.ArrayGenerator;
-import com.isvaso.sortalgorithms.bubblesort.BubbleSort;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -17,7 +16,7 @@ class SelectionSortTest {
                 intSourceArray.length);
         Arrays.sort(intAssertArray);
 
-        BubbleSort.sort(intSourceArray);
+        SelectionSort.sort(intSourceArray);
 
         assertArrayEquals(intAssertArray, intSourceArray);
     }
