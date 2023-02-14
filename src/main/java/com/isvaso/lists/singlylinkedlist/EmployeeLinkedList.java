@@ -1,9 +1,11 @@
-package com.isvaso.singlylinkedlist;
+package com.isvaso.lists.singlylinkedlist;
 
 /**
  * Singly Linked list implementation
+ * <br><br>
+ * "Data Structures and Algorithms: Deep Dive Using Java" course on Udemy.
  */
-public class EmployeeLinkedList {
+class EmployeeLinkedList {
 
     private EmployeeNode head;
     private int size;

@@ -3,6 +3,8 @@ package com.isvaso.sortalgorithms.challenge1;
  * Sort Algorithms - Challenge #1
  * <br><br>
  * Modify the merge sort algorithm so that it sorts integers in DESCENDING order
+ * <br><br>
+ * "Data Structures and Algorithms: Deep Dive Using Java" course on Udemy.
  */
 public class Challenge1 {
     /**

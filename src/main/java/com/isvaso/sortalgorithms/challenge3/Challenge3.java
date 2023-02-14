@@ -8,6 +8,7 @@ package com.isvaso.sortalgorithms.challenge3;
  *     <li>All values are in lowercase, so don't worry about
  *     uppercase//lowercase the values</li>
  * </ul>
+ * "Data Structures and Algorithms: Deep Dive Using Java" course on Udemy.
  */
 public class Challenge3 {
     /**

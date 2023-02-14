@@ -3,6 +3,8 @@ package com.isvaso.sortalgorithms.challenge2;
  * Sort Algorithms - Challenge #2
  * <br><br>
  * Change insertion sort so that it uses recursion
+ * <br><br>
+ * "Data Structures and Algorithms: Deep Dive Using Java" course on Udemy.
  */
 public class Challenge2 {
     /**

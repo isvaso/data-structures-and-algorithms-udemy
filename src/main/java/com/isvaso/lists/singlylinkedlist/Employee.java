@@ -1,11 +1,13 @@
-package com.isvaso.singlylinkedlist;
+package com.isvaso.lists.singlylinkedlist;
 
 /**
  * Employee's class <br>
  * Employee have {@code String} fields  firstName, lastName
  * and {@code int} field id number.
+ * <br><br>
+ *  "Data Structures and Algorithms: Deep Dive Using Java" course on Udemy.
  */
-public class Employee {
+class Employee {
 
     private String firstName;
     private String lastName;

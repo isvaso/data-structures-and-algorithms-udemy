@@ -1,8 +1,6 @@
-package com.isvaso.singlylinkedlist;
+package com.isvaso.lists.singlylinkedlist;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class EmployeeLinkedListTest {
 
