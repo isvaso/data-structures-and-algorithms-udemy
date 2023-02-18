@@ -2,8 +2,6 @@ package com.isvaso.hashtables.linkedlist;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class ChainedHashtableTest {
 
     @Test
@@ -18,6 +16,8 @@ class ChainedHashtableTest {
                 new Employee("Mike", "Wilson", 3245);
         Employee emp5 =
                 new Employee("Bill", "End", 78);
+        Employee emp6 =
+                new Employee("Bill", "Smith", 78);
 
         ChainedHashtable chainedHashtable = new ChainedHashtable();
 
@@ -26,11 +26,12 @@ class ChainedHashtableTest {
         chainedHashtable.put(emp3.getLastName(), emp3);
         chainedHashtable.put(emp4.getLastName(), emp4);
         chainedHashtable.put(emp5.getLastName(), emp5);
+        chainedHashtable.put(emp6.getLastName(), emp6);
 
         chainedHashtable.remove(emp4.getLastName());
 
         chainedHashtable.printHashtable();
 
-        System.out.println(chainedHashtable.get(emp4.getLastName()));
+        System.out.println(chainedHashtable.get(emp6.getLastName()));
     }
 }

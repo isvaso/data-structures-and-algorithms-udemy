@@ -1,7 +1,7 @@
 package com.isvaso.hashtables.linkedlist;
 
+import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.ListIterator;
 
 /**
  * LinkedLists Array Hashtable implementation with
@@ -94,7 +94,7 @@ public class ChainedHashtable {
                 System.out.println("Position " + i + ": empty");
             } else {
                 System.out.print("Position " + i + ": ");
-                ListIterator<StoredEmployee> iterator = hashtable[i].listIterator();
+                Iterator<StoredEmployee> iterator = hashtable[i].iterator();
 
                 while (iterator.hasNext()) {
                     System.out.print(iterator.next().employee);
