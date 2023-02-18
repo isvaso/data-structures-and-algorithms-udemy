@@ -28,29 +28,27 @@ public class BucketSort {
      * @param input source {@code int} array
      */
     public static void sort(int[] input) {
-        List<Integer>[] buckets = new List[10];
+        List<Integer>[] bucketList = new List[10];
 
-        for (int i = 0; i < buckets.length; i++) {
+        for (int i = 0; i < bucketList.length; i++) {
             // Using LinkedList for the buckets
             //buckets[i] = new LinkedList<Integer>();
 
             // Using ArrayList for the buckets
-            buckets[i] = new ArrayList<>();
+            bucketList[i] = new ArrayList<>();
         }
 
         for (int i = 0; i < input.length; i++) {
-            buckets[hash(input[i])].add(input[i]);
-        }
-
-        for (List bucket : buckets) {
-            Collections.sort(bucket);
+            bucketList[hash(input[i])].add(input[i]);
         }
 
         int j = 0;
 
-        for (int i = 0; i < buckets.length; i++) {
-            for (int value : buckets[i])
-                input[j++] = value;
+        for (List<Integer> integers : bucketList) {
+            Collections.sort(integers);
+
+            for (int v : integers)
+                input[j++] = v;
         }
     }
 

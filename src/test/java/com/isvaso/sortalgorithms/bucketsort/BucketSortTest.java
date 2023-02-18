@@ -16,7 +16,7 @@ class BucketSortTest {
                 intSourceArray.length);
         Arrays.sort(intAssertArray);
 
-        BucketSort.sort(intSourceArray);
+        BucketSort.sortMy(intSourceArray);
 
         assertArrayEquals(intAssertArray, intSourceArray);
     }
