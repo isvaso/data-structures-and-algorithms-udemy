@@ -1,4 +1,4 @@
-package com.isvaso.binarysearchtrees;
+package com.isvaso.binarysearchtrees.binarysearchtree;
 
 /**
  * Binary Search Tree Node implementation

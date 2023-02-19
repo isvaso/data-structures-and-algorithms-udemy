@@ -1,4 +1,4 @@
-package com.isvaso.binarysearchtrees;
+package com.isvaso.binarysearchtrees.binarysearchtree;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
