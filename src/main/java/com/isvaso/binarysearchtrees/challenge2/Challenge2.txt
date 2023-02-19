@@ -1,0 +1,126 @@
+Binary Search Trees - Challenge #2
+
+Practice for understanding the operation of algorithms
+for inserting and deleting nodes.
+
+"Data Structures and Algorithms: Deep Dive Using Java" course on Udemy.
+
+Source Binary Search Tree:
+                             25
+                           /    \
+                         20      27
+                        /  \    /  \
+                       15  22  26  30
+                        \         /  \
+                        17       29  32
+
+Task 1. Insert 28:
+                             25
+                           /    \
+                         20      27
+                        /  \    /  \
+                       15  22  26  30
+                        \         /  \
+                        17       29  32
+                                /
+                              >28<
+
+Task 2. Insert 16:
+                             25
+                           /    \
+                         20      27
+                        /  \    /  \
+                       15  22  26  30
+                        \         /  \
+                        17       29  32
+                       /        /
+                     >16<      28
+
+Task 3. Insert 23:
+                             25
+                           /    \
+                         20      27
+                        /  \    /  \
+                       15  22  26  30
+                        \    \    /  \
+                        17  >23< 29  32
+                       /        /
+                      16       28
+
+Task 4. Insert 14:
+                             25
+                           /    \
+                         20      27
+                        /  \    /  \
+                       15  22  26  30
+                      /  \   \    /  \
+                     14  17  23  29  32
+                        /       /
+                       16      28
+
+Task 5. Delete 28:
+                             25
+                           /    \
+                         20      27
+                        /  \    /  \
+                       15  22  26  30
+                      /  \   \    /  \
+                     14  17  23  29  32
+                        /
+                       16
+
+Task 6. Delete 22:
+                             25
+                           /    \
+                         20      27
+                        /  \    /  \
+                       15 >23< 26  30
+                      /  \        /  \
+                     14  17      29  32
+                        /
+                       16
+
+Task 7. Delete 15. Look for replacement in right subtree:
+
+                             25
+                           /    \
+                         20      27
+                        /  \    /  \
+                      >16< 23  26  30
+                      /  \        /  \
+                     14  17      29  32
+
+Task 8. Delete 27. Look for replacement in right subtree:
+
+                             25
+                           /    \
+                         20     >29<
+                        /  \    /  \
+                       16  23  26  30
+                      /  \           \
+                     14  17          32
+
+Task 9. Source:
+                             30
+                           /    \
+                         20      40
+                        /  \    /  \
+                       16  23  34  46
+                      /  \           \
+                     14  17          66
+                                    /
+                                   60
+                                     \
+                                     62
+
+Task 9. Delete 40. Look down right subtree for replacement:
+
+                             30
+                           /    \
+                         20    >>46<<
+                        /  \    /  \
+                       16  23  34 >66<
+                      /  \           \
+                     14  17         >60<
+                                    /
+                                  >62<
